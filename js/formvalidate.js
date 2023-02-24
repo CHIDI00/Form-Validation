@@ -24,6 +24,10 @@ const password = document.querySelector('.password');
 const sign_in = document.getElementById('signIn');
 const sign_up = document.getElementById('signUp');
 
+const error_Message = document.getElementById('errorMessage');
+
+const email_container = document.getElementById('email')
+
 sign_in.addEventListener('mouseover', () => {
     name_field.style.maxHeight = '0'
     title.innerText = 'Sign in';
@@ -42,6 +46,33 @@ sign_up.addEventListener('mouseover', ()=> {
     sign_up.style.color = '#fff'
     sign_in.style.backgroundColor = '#f0cdbb'
     sign_in.style.color = 'orangered'
+
 })
 
 
+function validate_signIn() {
+    try {
+        if (user_name.value == '') {
+            console.log('Please enter a username')
+            throw new Error('Fill the form')
+        } else if (email.value == '' || !email.value.includes('@gmail.com')) {
+            email_container.style.border = '1px solid red';
+            console.log('Enter a valid email address')
+            // error_Message.innerText = 'Enter a valid email address'
+        } else if (password.value == '' || password.value.length <= 7) {
+           console.log('Password must be at least 8 characters long')
+            // error_Message.innerText = 'Password must be at least 8 characters long';
+            error_Message.style.color = 'red'
+        } else {
+            console.log(`${user_name.value} your acc has been created`)
+            // error_Message.innerText = `${user_name.value} your acc has been created`;
+        }
+    } catch (e) {
+        console.log('Oops! Something went wrong', e.message)
+        // error_Message.innerText = 'Oops! Something went wrong', e.message
+    }
+}
+
+sign_up.addEventListener('click', ()=> {
+    validate_signIn()
+})
