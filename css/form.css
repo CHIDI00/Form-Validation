@@ -5,6 +5,7 @@
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +13,19 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     background: orangered;
+    overflow: hidden;
 }
 
 h2 {
-    display: none;
+    /* display: none; */
+    width: 350px;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    height: 70px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
 }
 
 .container {
@@ -25,11 +35,12 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 350px;
-    background-color: rgb(1, 4, 30);
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    background-color: black;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
+    z-index: 500;
 }
 
 .form-box h1 {
@@ -50,6 +61,7 @@ h2 {
     top: 70px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
 }
 
 .container form {
@@ -137,4 +149,48 @@ form p {
 
 .formarea {
     height: 250px;
+}
+
+.spans .N1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    left: 35%;
+    border-radius: 50px;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.spans .N2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    left: 50%;
+    border-radius: 150px 500px 70px 0;
+    background-color: rgb(7, 69, 4);
+    z-index: 1;
+}
+
+.spans .N3 {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 60%;
+    left: -20%;
+    border-radius: 50%;
+    background-color: pink;
+    z-index: 1;
+}
+
+.spans .N4 {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: -40%;
+    left: 80%;
+    border-radius: 50%;
+    background-color: rgb(241, 61, 91);
+    z-index: 1;
 }
