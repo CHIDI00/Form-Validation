@@ -11,41 +11,38 @@
     <title>Form Validation</title>
 </head>
 <body>
-    <div class="container-container">
-        <div class="container">
-            <div class="form-container">
-                <h2>Oop! something went wrong...</h2>
-                <form class="form">
-                    <h1>Sign up</h1>
-                    <div class="formInputs">
-                        <div class="input">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder="Full Name">
-                        </div>
-                        <div class="input">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="text" placeholder="Email">
-                        </div>
-                        <div class="input">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="text" placeholder="Password">
-                        </div>
-                        <div class="input">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="text" placeholder="Confirm Password">
-                        </div>
+    <div class="container">
+        <div class="form-box">
+          <h1 id="title">Sign up</h1>
+            <form>
+                <div class="formarea">
+                <div class="inputfield" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="username" placeholder="Username">
+                </div>
 
-                    </div>
-                    <div class="pword">
-                        <p>Forgotten password? <a href="">Click here</a></p>
-                    </div>
+                <div class="inputfield" id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" class="email" placeholder="Email">
+                </div>
 
-                    <div class="buttons">
-                        <button>Sign up</button>
-                        <button>Sign in</button>
-                    </div>
-                </form>
+                <div class="inputfield" id="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="password" placeholder="Password">
+                </div>
+
+                <!-- <div class="inputfield" id="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="confirmPassword" placeholder="Confirm Password">
+                </div> -->
+                <p class="precovery">Forgotten password? <a href="#">Click here</a></p>
             </div>
+
+            <div class="createacc">
+                <button type="button" id="signUp">Sign up</button>
+                <button type="button" id="signIn" class="disable">Sign in</button>
+            </div>
+        </form>
         </div>
     </div>
 
