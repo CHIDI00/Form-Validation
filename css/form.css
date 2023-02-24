@@ -17,7 +17,6 @@ body {
 }
 
 h2 {
-    /* display: none; */
     width: 350px;
     background-color: black;
     color: #fff;
@@ -83,7 +82,6 @@ form .inputfield {
 }
 
 .inputfield {
-    /* position: relative; */
     width: 100%;
     display: flex;
     border-radius: 5px;
@@ -92,14 +90,12 @@ form .inputfield {
     max-height: 65px;
     transition: max-height 0.5s;
     overflow: hidden;
-    /* background-color: #cff6d5; */
 }
 
 input {
     width: 100%;
     border: none;
     outline: none;
-    /* font-size: 20px; */
     padding: 18px 10px;
     background: transparent;
     color: #fff;
@@ -108,18 +104,13 @@ input {
 .inputfield i {
     color: #0a6b40;
     font-size: 20px;
-    /* text-align: center; */
     padding: 0 10px;
-    /* transform: translate(-50%, -50%); */
-    /* z-index: 1000; */
 }
 
 form p {
-    /* width: 100%; */
     font-size: 13px;
     text-align: left;
     color: #fff;
-    /* padding: 10px 0; */
 }
 
 .createacc {
@@ -127,7 +118,6 @@ form p {
     display: flex;
     justify-content: space-between;
     margin: 5px 0;
-    /* align-items: center; */
 }
 
 .createacc button {
