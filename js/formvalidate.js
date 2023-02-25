@@ -59,17 +59,20 @@ function validate_signIn() {
             //email_container.style.border = '1px solid red';
             console.log('Enter a valid email address')
             error_Message.innerText = 'Enter a valid email address'
+            error_Message.style.color = 'red'
         } else if (password.value == '' || password.value.length <= 7) {
            console.log('Password must be at least 8 characters long')
             error_Message.innerText = 'Password must be at least 8 characters long';
             error_Message.style.color = 'red'
         } else {
             console.log(`${user_name.value} your acc has been created`)
-            error_Message.innerText = `${user_name.value} your acc has been created`;
+            error_Message.innerText = `${user_name.value} your account has been created`;
+            error_Message.style.color = 'green'
         }
     } catch (e) {
         console.log('Oops! Something went wrong', e.message)
         error_Message.innerText = 'Oops! Something went wrong', e.message
+        error_Message.style.color = 'red'
     }
 }
 

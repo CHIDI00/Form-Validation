@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background: orangered;
+    background: rgb(249, 98, 43);
     overflow: hidden;
 }
 
@@ -159,7 +159,7 @@ form p {
     top: 10%;
     left: 50%;
     border-radius: 150px 500px 70px 0;
-    background-color: rgb(7, 69, 4);
+    background-color: rgb(81, 235, 73);
     z-index: 1;
 }
 
@@ -181,6 +181,6 @@ form p {
     top: -40%;
     left: 80%;
     border-radius: 50%;
-    background-color: rgb(241, 61, 91);
+    background-color: rgb(102, 114, 246);
     z-index: 1;
 }
